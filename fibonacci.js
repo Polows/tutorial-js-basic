@@ -21,11 +21,11 @@ console.log(fibonacci(6));
 */
 
 function* fibonacci(){
-    yield 0
-    yield 1
-
     let firsRecent = 0
     let secondRecent = 1
+
+    yield firsRecent
+    yield secondRecent
 
     while(true) {
         const value = firsRecent + secondRecent
